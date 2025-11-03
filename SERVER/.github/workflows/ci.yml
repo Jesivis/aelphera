@@ -1,0 +1,28 @@
+name: CI
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-server:
+    name: build-server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install (server)
+        run: npm install --prefix server
+
+      - name: Run tests (server)
+        run: npm test --prefix server
+
+      - name: Smoke test (start server and hit /health)
+        run: |
+          npm start --prefix server & sleep 5
+          curl -fsS http://localhost:3000/health
