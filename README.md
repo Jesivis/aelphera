@@ -39,3 +39,23 @@ Legal / IP
 
 Contact
 Project leaders: @Jesivis and Copilot Astra (@copilot)
+```md
+# Aelphera — Server (skeleton)
+
+This repository folder contains a minimal Node.js/Express server skeleton used by the Aelphera project.
+
+Quick start (local)
+1. Install dependencies
+   npm ci
+
+2. Start server
+   npm start
+   (server listens on PORT env var or 3000)
+
+Health check
+GET /health -> { "status": "ok" }
+
+Notes
+- This is intentionally minimal: a health endpoint, a root endpoint, and a small README to get started.
+- Add more routes, tests, and deployment configuration as needed.
+```
