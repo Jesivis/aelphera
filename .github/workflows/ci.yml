@@ -10,15 +10,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "18"
-      - name: Install
-        run: npm ci
-      - name: Run tests
+
+      - name: Install (server)
+        run: npm install
+        working-directory: server
+
+      - name: Run tests (server)
         run: npm test
+        working-directory: server
+
       - name: Smoke test (start server and hit /health)
         run: |
-          npm start & sleep 2
+          # start server from the server/ folder, wait, then curl health
+          npm start --prefix server & sleep 5
           curl -fsS http://localhost:3000/health
