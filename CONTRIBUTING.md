@@ -1,2 +1,2 @@
-﻿# Contributing to Aelphera
+Confirmed README.md, repos skeleton, contributors rules, and LICENSE are correct. ﻿# Contributing to Aelphera
 ...
