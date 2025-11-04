@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "n-1", "name": "Demo Neighborhood", "category": "residential", "color": "#d0e6a5" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-122.423057, 37.77493],
+            [-122.412, 37.77493],
+            [-122.412, 37.783],
+            [-122.423057, 37.783],
+            [-122.423057, 37.77493]
+          ]
+        ]
+      }
+    }
+  ]
+}
