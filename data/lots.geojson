@@ -1,0 +1,37 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "lot-1", "status": "available", "owner": null, "price": 1000 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-122.4225, 37.7755],
+            [-122.4215, 37.7755],
+            [-122.4215, 37.7765],
+            [-122.4225, 37.7765],
+            [-122.4225, 37.7755]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "lot-2", "status": "claimed", "owner": "alice", "price": 1200 },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-122.4209, 37.777],
+            [-122.4200, 37.777],
+            [-122.4200, 37.778],
+            [-122.4209, 37.778],
+            [-122.4209, 37.777]
+          ]
+        ]
+      }
+    }
+  ]
+}
