@@ -17,6 +17,7 @@ const uniforms = {
   lavaTexture: { value: null },
   iceTexture: { value: null },
   heightScale: { value: 30.0 },
+  texelSize: { value: 1.0 / 512.0 }, // Heightmap resolution
   // Elevation thresholds for blending (0-1 normalized)
   sandLevel: { value: 0.15 },
   grassLevel: { value: 0.35 },
@@ -138,8 +139,10 @@ async function loadAssets() {
 
 // Create the terrain geometry and material
 function createTerrain(vertexShader, fragmentShader) {
-  // High-resolution plane geometry (256x256 segments for smooth terrain)
-  const geometry = new THREE.PlaneGeometry(100, 100, 255, 255);
+  // High-resolution plane geometry (configurable resolution, default 128x128 for performance)
+  // For higher quality, increase to 255x255, but this may impact low-end devices
+  const resolution = 128; // Adjust based on performance needs
+  const geometry = new THREE.PlaneGeometry(100, 100, resolution, resolution);
   geometry.rotateX(-Math.PI / 2); // Make it horizontal
 
   // Create shader material

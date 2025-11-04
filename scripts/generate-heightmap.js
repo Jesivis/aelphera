@@ -45,7 +45,12 @@ class PerlinNoise {
   }
 
   rand(x, y) {
-    const n = Math.sin(x * 12.9898 + y * 78.233 + this.seed) * 43758.5453;
+    // Pseudo-random number generator using sine function
+    // Constants chosen for good distribution properties
+    const MAGIC_X = 12.9898;  // X multiplier for distribution
+    const MAGIC_Y = 78.233;   // Y multiplier for distribution
+    const MAGIC_SCALE = 43758.5453; // Large prime-like number for amplification
+    const n = Math.sin(x * MAGIC_X + y * MAGIC_Y + this.seed) * MAGIC_SCALE;
     return n - Math.floor(n);
   }
 
@@ -259,8 +264,9 @@ async function generateHeightmap() {
       elevation += noiseContribution;
 
       // Normalize to 0-255 range
-      // Assuming max elevation around 100, scale accordingly
-      let normalizedElevation = (elevation / 100) * 255;
+      // Max expected elevation: base (up to 50) * modifier (up to 1.5) + lots (up to 15) + noise (up to 25) ≈ 115
+      const MAX_ELEVATION = 115;
+      let normalizedElevation = (elevation / MAX_ELEVATION) * 255;
       normalizedElevation = Math.max(0, Math.min(255, normalizedElevation));
 
       // Set pixel (grayscale)

@@ -3,6 +3,7 @@
 
 uniform sampler2D heightmap;
 uniform float heightScale;
+uniform float texelSize; // Size of one texel in UV space (1.0 / heightmapResolution)
 
 varying vec2 vUv;
 varying vec3 vPosition;
@@ -28,7 +29,6 @@ void main() {
   
   // Calculate normal for lighting
   // Sample neighboring heightmap values to compute gradient
-  float texelSize = 1.0 / 512.0; // Assuming 512x512 heightmap
   float heightL = texture2D(heightmap, uv + vec2(-texelSize, 0.0)).r;
   float heightR = texture2D(heightmap, uv + vec2(texelSize, 0.0)).r;
   float heightD = texture2D(heightmap, uv + vec2(0.0, -texelSize)).r;
