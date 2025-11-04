@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lot 1",
+        "lotId": "lot-001",
+        "elevation": 5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.415, 37.775],
+          [-122.413, 37.775],
+          [-122.413, 37.773],
+          [-122.415, 37.773],
+          [-122.415, 37.775]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lot 2",
+        "lotId": "lot-002",
+        "elevation": 8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.413, 37.775],
+          [-122.411, 37.775],
+          [-122.411, 37.773],
+          [-122.413, 37.773],
+          [-122.413, 37.775]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lot 3",
+        "lotId": "lot-003",
+        "elevation": 12
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.395, 37.775],
+          [-122.393, 37.775],
+          [-122.393, 37.773],
+          [-122.395, 37.773],
+          [-122.395, 37.775]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lot 4",
+        "lotId": "lot-004",
+        "elevation": 15
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.393, 37.775],
+          [-122.391, 37.775],
+          [-122.391, 37.773],
+          [-122.393, 37.773],
+          [-122.393, 37.775]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lot 5",
+        "lotId": "lot-005",
+        "elevation": 10
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.425, 37.765],
+          [-122.423, 37.765],
+          [-122.423, 37.763],
+          [-122.425, 37.763],
+          [-122.425, 37.765]
+        ]]
+      }
+    }
+  ]
+}

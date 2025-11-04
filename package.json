@@ -1,0 +1,16 @@
+{
+  "name": "aelphera",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "generate:heightmap": "node scripts/generate-heightmap.js",
+    "server:start": "cd server && npm start",
+    "server:install": "cd server && npm install"
+  },
+  "devDependencies": {
+    "canvas": "^2.11.2"
+  },
+  "description": "Aelphera - Open-source MMO life simulation",
+  "keywords": ["game", "mmo", "simulation", "3d"],
+  "license": "MPL-2.0"
+}

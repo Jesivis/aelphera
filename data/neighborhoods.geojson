@@ -1,0 +1,117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown",
+        "category": "commercial",
+        "elevation": 30
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.42, 37.78],
+          [-122.40, 37.78],
+          [-122.40, 37.76],
+          [-122.42, 37.76],
+          [-122.42, 37.78]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Residential Hills",
+        "category": "residential",
+        "elevation": 20
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.40, 37.78],
+          [-122.38, 37.78],
+          [-122.38, 37.76],
+          [-122.40, 37.76],
+          [-122.40, 37.78]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mountain District",
+        "category": "mountains",
+        "elevation": 50,
+        "terrain": "rock"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.44, 37.78],
+          [-122.42, 37.78],
+          [-122.42, 37.76],
+          [-122.44, 37.76],
+          [-122.44, 37.78]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Volcanic Fields",
+        "category": "volcanic",
+        "elevation": 40,
+        "terrain": "lava"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.42, 37.76],
+          [-122.40, 37.76],
+          [-122.40, 37.74],
+          [-122.42, 37.74],
+          [-122.42, 37.76]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Frozen Tundra",
+        "category": "arctic",
+        "elevation": 35,
+        "terrain": "ice"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.44, 37.80],
+          [-122.42, 37.80],
+          [-122.42, 37.78],
+          [-122.44, 37.78],
+          [-122.44, 37.80]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sandy Beach",
+        "category": "beach",
+        "elevation": 5,
+        "terrain": "sand"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.40, 37.74],
+          [-122.38, 37.74],
+          [-122.38, 37.72],
+          [-122.40, 37.72],
+          [-122.40, 37.74]
+        ]]
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aelphera - 3D Terrain Preview</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      overflow: hidden;
+    }
+    #canvas-container {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+    #info {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.6;
+      z-index: 100;
+      max-width: 300px;
+    }
+    #info h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #4CAF50;
+    }
+    #info p {
+      margin-bottom: 8px;
+    }
+    #loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      text-align: center;
+      z-index: 99;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas-container"></div>
+  <div id="info">
+    <h1>Aelphera 3D Terrain</h1>
+    <p><strong>Controls:</strong></p>
+    <p>Left Mouse: Rotate</p>
+    <p>Right Mouse: Pan</p>
+    <p>Scroll: Zoom</p>
+    <p><strong>Terrain:</strong></p>
+    <p>Sand → Grass → Rock → Lava → Ice</p>
+  </div>
+  <div id="loading">Loading terrain...</div>
+
+  <!-- Three.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/examples/js/controls/OrbitControls.js"></script>
+  
+  <!-- Our 3D app -->
+  <script type="module" src="app-3d.js"></script>
+</body>
+</html>
