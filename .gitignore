@@ -2,3 +2,7 @@
 bin/
 obj/
 ...
+
+# Node
+node_modules/
+package-lock.json
