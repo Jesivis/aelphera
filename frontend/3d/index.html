@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aelphera 3D Terrain Preview</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1a1a1a;
+    }
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+    #info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      z-index: 100;
+      max-width: 300px;
+      line-height: 1.6;
+    }
+    #info h2 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      color: #4CAF50;
+    }
+    #info p {
+      margin: 5px 0;
+    }
+    #info .key {
+      display: inline-block;
+      background: #333;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 12px;
+    }
+    #loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 20px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading">Loading terrain...</div>
+  <div id="info">
+    <h2>🏔️ Aelphera 3D Terrain</h2>
+    <p><strong>Controls:</strong></p>
+    <p><span class="key">Left Mouse</span> Rotate</p>
+    <p><span class="key">Right Mouse</span> Pan</p>
+    <p><span class="key">Scroll</span> Zoom</p>
+    <p style="margin-top: 10px; font-size: 12px; color: #aaa;">
+      Terrain blends sand, grass, rock, lava, and ice based on elevation and slope.
+    </p>
+  </div>
+  
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="app-3d.js"></script>
+</body>
+</html>

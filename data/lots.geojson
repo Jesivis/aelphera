@@ -1,0 +1,81 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lot-001",
+        "name": "City Plaza",
+        "elevation": 2,
+        "terrain": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.445, 37.775],
+          [-122.444, 37.775],
+          [-122.444, 37.774],
+          [-122.445, 37.774],
+          [-122.445, 37.775]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lot-002",
+        "name": "Lava Field",
+        "elevation": 8,
+        "terrain": "lava"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.455, 37.785],
+          [-122.454, 37.785],
+          [-122.454, 37.784],
+          [-122.455, 37.784],
+          [-122.455, 37.785]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lot-003",
+        "name": "Ice Cap",
+        "elevation": 45,
+        "terrain": "ice"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.457, 37.788],
+          [-122.456, 37.788],
+          [-122.456, 37.787],
+          [-122.457, 37.787],
+          [-122.457, 37.788]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lot-004",
+        "name": "Beach Front",
+        "elevation": 0.5,
+        "terrain": "normal"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.430, 37.785],
+          [-122.429, 37.785],
+          [-122.429, 37.784],
+          [-122.430, 37.784],
+          [-122.430, 37.785]
+        ]]
+      }
+    }
+  ]
+}
