@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Map 3D â€” Aelphera</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    html,body{height:100%;margin:0}
+    #app{height:100%;width:100%;overflow:hidden;background:#0b4a6b}
+    #ui { position:absolute; top:8px; left:8px; z-index:1000; color:#fff; font-family: sans-serif; }
+    a { color: #ffd; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="ui">
+    <div>3D Map Preview â€” Use mouse to orbit/zoom/drag</div>
+    <div style="margin-top:6px;font-size:0.9em">Assets required: <code>/frontend/3d/assets/heightmap.png</code>, <code>/frontend/3d/assets/terrain-*.png</code></div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/three@0.158.0/build/three.module.js"></script>
+  <script type="module" src="https://unpkg.com/three@0.158.0/examples/jsm/controls/OrbitControls.js"></script>
+  <script type="module" src="./app-3d.js"></script>
+</body>
+</html>
